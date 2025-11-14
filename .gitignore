@@ -45,3 +45,15 @@ Thumbs.db
 
 # WandB
 wandb/
+
+# Test coverage
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*_old.py
