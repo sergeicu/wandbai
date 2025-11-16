@@ -7,7 +7,7 @@ import json
 class AIAnalyzer:
     """AI-powered analysis of experiment runs using Claude."""
 
-    def __init__(self, api_key: str, model: str = "claude-3-5-sonnet-20241022"):
+    def __init__(self, api_key: str, model: str = "claude-sonnet-4-5-20250929"):
         """
         Initialize AI analyzer.
 
@@ -52,9 +52,12 @@ class AIAnalyzer:
             return analysis
 
         except Exception as e:
+            import traceback
+            error_details = traceback.format_exc()
             print(f"Error in AI analysis: {e}")
+            print(f"Full traceback:\n{error_details}")
             return {
-                "summary": "Analysis unavailable",
+                "summary": f"Analysis unavailable - Error: {str(e)}",
                 "insights": [],
                 "recommendations": [],
                 "key_findings": []

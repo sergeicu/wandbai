@@ -198,7 +198,7 @@ class WandBIntegration:
                 'name': run.name,
                 'state': run.state,
                 'created_at': run.created_at,
-                'updated_at': run.updated_at,
+                'updated_at': getattr(run, 'updated_at', run.created_at),
                 'runtime': run.summary.get('_runtime', 0),
                 'user': run.user.username if run.user else 'unknown',
                 'commit': run.commit if hasattr(run, 'commit') else None,
