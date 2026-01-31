@@ -1,0 +1,15 @@
+{
+  "experiment_name": "16_early_stopping",
+  "description": "Early stopping with patience=3",
+  "hidden_layers": [128, 64],
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "optimizer": "adam",
+  "epochs": 20,
+  "dropout": 0.0,
+  "batch_norm": false,
+  "weight_decay": 0.0,
+  "data_augmentation": false,
+  "lr_scheduler": false,
+  "early_stopping_patience": 3
+}

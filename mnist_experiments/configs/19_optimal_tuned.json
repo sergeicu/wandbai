@@ -1,0 +1,16 @@
+{
+  "experiment_name": "19_optimal_tuned",
+  "description": "Well-tuned configuration based on best results",
+  "hidden_layers": [256, 128, 64],
+  "batch_size": 64,
+  "learning_rate": 0.005,
+  "optimizer": "adam",
+  "epochs": 15,
+  "dropout": 0.25,
+  "batch_norm": true,
+  "weight_decay": 0.0001,
+  "data_augmentation": true,
+  "lr_scheduler": true,
+  "scheduler_type": "reduce_on_plateau",
+  "early_stopping_patience": 5
+}

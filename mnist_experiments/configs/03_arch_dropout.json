@@ -1,0 +1,14 @@
+{
+  "experiment_name": "03_arch_dropout",
+  "description": "Adding dropout (0.2) for regularization",
+  "hidden_layers": [128, 64],
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "optimizer": "adam",
+  "epochs": 10,
+  "dropout": 0.2,
+  "batch_norm": false,
+  "weight_decay": 0.0,
+  "data_augmentation": false,
+  "lr_scheduler": false
+}

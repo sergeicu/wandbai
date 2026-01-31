@@ -1,0 +1,14 @@
+{
+  "experiment_name": "18_overfit_scenario",
+  "description": "Intentional overfitting - very deep, no regularization, small batch",
+  "hidden_layers": [512, 512, 256, 256, 128],
+  "batch_size": 32,
+  "learning_rate": 0.01,
+  "optimizer": "adam",
+  "epochs": 20,
+  "dropout": 0.0,
+  "batch_norm": false,
+  "weight_decay": 0.0,
+  "data_augmentation": false,
+  "lr_scheduler": false
+}
